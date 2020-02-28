@@ -68,7 +68,6 @@
   color: #708090;
   display: block;
   transition: 0.3s;
-  vertical-align: baseline;
 }
 
 .sidebar a:hover {
