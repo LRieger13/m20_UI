@@ -527,7 +527,6 @@ body {
 	border: 3px inset #333;
 	box-shadow: 5px 5px #555;
 	vertical-align: baseline;
-	z-index: -1;
 }
 
 #outside {
