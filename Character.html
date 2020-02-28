@@ -7,7 +7,7 @@ Date: 02/25/2020
 
 <head>
 	<meta charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-	<title>Home</title>
+	<title>NPC</title>
 	<meta name="author" content="Leah Rieger">
 	<script src="https://kit.fontawesome.com/6bb03a50c0.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" media="screen" href="layout.css">
@@ -15,12 +15,12 @@ Date: 02/25/2020
 	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|News+Cycle|Oswald&display=swap" rel="stylesheet">
 </head>
 
-<body class = "banner0">
+<body class = "banner3">
 	<div id="header">
 		<button class = "openbtn" onclick="openNav()"><i class="fas fa-concierge-bell"></i></button>
 		
 		<div class = "header">
-			<img src = "splat.png"><h1 class = "header"> M20</h1>
+			<img src = "splat.png"><h1 class = "header"> NPC</h1>
 		</div>
 		
 		<!-- NAV -->
@@ -29,27 +29,55 @@ Date: 02/25/2020
 			<a id = "icon" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class = "fas fa-times"></i></a>
 			<!-- logo -->
 			<img class = "sidebar-logo" src = "logo.png" alt = "Leah Logo">
-			<a id = "icon" class="active" href="home.html"><i style='font-size:20px' class="fas fa-caravan"></i> Home</a>
+			<a id = "icon" href="home.html"><i style='font-size:20px' class="fas fa-caravan"></i> Home</a>
 			<a id = "icon" href="rules.html"><i  class="fas fa-book-dead"></i> Rules</a>
-			<a id = "icon" href="character.html"><i class="fas fa-dragon"></i> NPC</a>
+			<a id = "icon" class="active" href="character.html"><i class="fas fa-dragon"></i> NPC</a>
 			<a id = "icon" href="deck.html"><i class="fas fa-dice-d20"></i> Decks</a>
 			<a id = "icon" href="contact.html"><i class="fab fa-hubspot"></i> Coms</a>
 		</div>
 		</div>
 	</div>
-	<!-- MAIN CONTENT --> 
-<section class = "box content">
-	<h2>Welcome Adventurer</h2>
-	<p>
-		As you have waited what felt like years since the fallout for someone, anyone to reach out in your bunker you finally hear a slight crackle on your radio. 
-		At first, you think, just static. <br> Then, what sounds like an air raid starts going off and you hear a small voice come over the radio waves
-		" <em>*ahem* </em> Fellow humans, if there are any. We are stuck in the convenience store.” <h3>BANG</h3> <p>“Whatever the fallout turned the rest of humanity into has us trapped. 
-		Not sure how long we’ll last. IF anyone is left. I hope you hear this, my battery won’t la--” <br><br>Then <i>silence</i>.
-
-	</p>
 	
-</section>
+<!-- TAB -->
+	<div class="warpper">
+		<input class="radio" id="one" name="group" type="radio" checked>
+		<input class="radio" id="two" name="group" type="radio">
+		<div class="tabs1">
+		<!-- TAB 1 -->
+		<label class="tab" id="one-tab" for="one"><i id="outside2" class ="fas fa-users"></i></label>
+		<!-- TAB 2 -->
+		<label class="tab" id="two-tab" for="two"><i id="outside2" class ="fas fa-skull"></i></label>
+		</div>
+		
+		<div class="panels">
+			<div class="panel" id="one-panel">
+				<div class="panel-title">Friendlies</div> <!-- TAB 1 -->
+					<p class = "panel-info">
+						Info to come soon..
+						<br>
+						<br>
+						<br>
+					</p>
+			</div>
+		
 
+			<div class="panel" id="two-panel">
+				<div class="panel-title">Monsters</div> <!-- TAB 2 -->
+					<p class = "panel-info">
+						Info to come soon..
+						<br>
+						<br>
+						<br>
+					</p>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="sticker">
+		<p>Need some dice? Use some virtual d20:</p>
+		<button id="outside"><a href="http://a.teall.info/dice/" target="_blank"><i class="fas fa-dice-d20"></i></a></button>
+	</div>
 <script>
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";

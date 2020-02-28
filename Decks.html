@@ -1,35 +1,214 @@
 <!DOCTYPE html>
-<meta charset = "UTF-8">
-<meta name = "viewport" content = "width = device - width, initial scale = 1">
+<!--
+Program: Project
+Author: Leah Rieger
+Date: 02/25/2020
+-->
 
-<!-- <link rel="stylesheet" href=""> -->
-<!-- This is the top part, will be on every page -->
-<body>
-<div class="header">
-  <h1>m20</h1>
-  <h5>A cry for help created by those in peril awaiting 
-      an adventurer to save them.</h5>
-</div>
+<head>
+	<meta charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<title>Deck</title>
+	<meta name="author" content="Leah Rieger">
+	<script src="https://kit.fontawesome.com/6bb03a50c0.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="layout.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|News+Cycle|Oswald&display=swap" rel="stylesheet">
+</head>
 
+<body class = "banner2">
+	<div id="header">
+		<button class = "openbtn" onclick="openNav()"><i class="fas fa-concierge-bell"></i></button>
+		
+		<div class = "header">
+			<img src = "splat.png"><h1 class = "header"> Decks</h1>
+		</div>
+		
+		<!-- NAV -->
+		<div id="main">
+		<div class="sidebar" id = "mySidebar">
+			<a id = "icon" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class = "fas fa-times"></i></a>
+			<!-- logo -->
+			<img class = "sidebar-logo" src = "logo.png" alt = "Leah Logo">
+			<a id = "icon" href="home.html"><i style='font-size:20px' class="fas fa-caravan"></i> Home</a>
+			<a id = "icon" href="rules.html"><i  class="fas fa-book-dead"></i> Rules</a>
+			<a id = "icon" href="character.html"><i class="fas fa-dragon"></i> NPC</a>
+			<a id = "icon" class="active" href="deck.html"><i class="fas fa-dice-d20"></i> Deck</a>
+			<a id = "icon" href="contact.html"><i class="fab fa-hubspot"></i> Coms</a>
+		</div>
+		</div>
+	</div>
+	<!-- MAIN CONTENT --> 
+	<section class="card">
+	  <div class="card--content">
+		<!-- Frankenstein -->
+			<div id="card"  class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="frank.jpg" alt="Frankenstein poster" style="width:250px;height:250px;">
+					</div>
+					<div class="flip-card-back">
+						<h4 style="font-family: 'Fredericka the Great'; font-size: 25px;">Frankenstein</h4>
+						<p>Monster stats:</p>
+						<p style="list-style: none; font-size: 12px; font-family: 'Oswald';">
+							Hit Points - 207 (18d12 +90)<br>
+							STR : 23 (+6) -- DEX : 12 (+1) -- CON : 21 (+6)<br>
+							INT : 18 (+3) -- WIS : 15 (+2) -- CHA : 17 (+2)<br>
+							
+							Strenths : Super Strength (bonus +5pts strength on roll for melee hits) <br>
+							Weakness : Fire.
+						</p>
+					</div>
+				</div>
+			</div>
+	  </div>
+	  <div class="card--content">
+			<!-- Bride of Frankenstein -->
+				<div id="card"  class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="bride.jpg" alt="Bride of Frankenstein poster" style="width:250px;height:250px;">
+						</div>
+						<div class="flip-card-back">
+							<h4><b>The Bride of Frankenstein</b></h4>
+							<p>Monster stats</p>
+							<p>Content here </p>
+						</div>
+					</div>
+				</div>
+			</div>
+	  </div>
+	  <div class="card--content">
+		<!-- Dracula -->
+			<div id="card" class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="drac.jpg" alt="Dracula poster" style="width:250px;height:250px;">
+					</div>
+					<div class="flip-card-back">
+						<h4><b>Count Dracula</b></h4>
+						<p>Monster stats</p>
+						<p>Content here </p>
+					</div>
+				</div>
+			</div>
+	  </div>
+	  <div class="card--content">
+		<!-- Wolfman -->
+			<div id="card" class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					<img src="wolf.jpg" alt="Wolfman poster" style="width:250px;height:250px;">
+					</div>
+					<div class="flip-card-back">
+						<h4><b>Wolfman</b></h4>
+						<p>Monster stats</p>
+						<p>Content here </p>
+					</div>
+				</div>
+			</div>
+	  </div>
+	  <div class="card--content">
+		<!-- Mummy -->
+			<div id="card" class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					<img src="mummy.jpg" alt="Mummy poster" style="width:250px;height:250px;">
+					</div>
+					<div class="flip-card-back">
+						<h4><b>Mummy</b></h4>
+						<p>Monster stats</p>
+						<p>Content here </p>
+					</div>
+				</div>
+			</div>
+	  </div>
+	  <div class="card--content">
+		<!-- create from black lagoon -->
+			<div id="card" class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					<img src="creature.jpg" alt="Creature from Black Lagoon poster" style="width:250px;height:250px;">
+					</div>
+					<div class="flip-card-back">
+						<h4><b>Creature from Black Lagoon</b></h4>
+						<p>Monster stats</p>
+						<p>Content here </p>
+					</div>
+				</div>
+			</div>
+	  </div>
+	  <div class="card--content">
+		<!-- creature to come -->
+			<div id="card" class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					<img src="splat.png" alt="Creature from Black Lagoon poster" style="width:250px;height:250px;">
+					</div>
+					<div class="flip-card-back">
+						<h4><b>Creature to Come Soon</b></h4>
+						<p>Monster stats</p>
+						<p>Content here </p>
+					</div>
+				</div>
+			</div>
+	  </div>
+	  <div class="card--content">
+				<!-- creature to come -->
+			<div id="card" class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					<img src="splat.png" alt="Creature from Black Lagoon poster" style="width:250px;height:250px;">
+					</div>
+					<div class="flip-card-back">
+						<h4><b>Creature to Come Soon</b></h4>
+						<p>Monster stats</p>
+						<p>Content here </p>
+					</div>
+				</div>
+			</div>
+	  </div>
+	  <div class="card--content">
+				<!-- creature to come -->
+			<div id="card" class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					<img src="splat.png" alt="Creature from Black Lagoon poster" style="width:250px;height:250px;">
+					</div>
+					<div class="flip-card-back">
+						<h4><b>Creature to Come Soon</b></h4>
+						<p>Monster stats</p>
+						<p>Content here </p>
+					</div>
+				</div>
+			</div>
+	  </div>
+	  <div class="card--content">
+				<!-- creature to come -->
+			<div id="card" class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+					<img src="splat.png" alt="Creature from Black Lagoon poster" style="width:250px;height:250px;">
+					</div>
+					<div class="flip-card-back">
+						<h4><b>Creature to Come Soon</b></h4>
+						<p>Monster stats</p>
+						<p>Content here </p>
+					</div>
+				</div>
+			</div>
+	  </div>
+	</section>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
 
-<!-- Content will go here -->
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
 
-<!-- Nav Bar, Header, Sections\Articles, Footer -->
-<!-- Navigation -->
-<nav class="w3-bar w3-black">
-  <a href="#home" class="w3-button w3-bar-item">Home</a>
-  <a href="#deck" class="w3-button w3-bar-item">Decks</a>
-  <a href="#rules" class="w3-button w3-bar-item">Rules</a>
-  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
-</nav>
-
-<!-- Footer 
-<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
-  <a href="#"><i class="fa fa-facebook-official"></i></a>
-  <a href="#"><i class="fa fa-twitter"></i></a>
-  <a href="#"><i class="fa fa-instagram"></i></a>
-</footer> -->
-
+</script>
 </body>
-
-</html>
+</html>*

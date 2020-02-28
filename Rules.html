@@ -1,5 +1,228 @@
 <!DOCTYPE html>
-<meta charset = "UTF-8">
+<meta charset = "UTF-8"><!DOCTYPE html>
+<!--
+Program: Project
+Author: Leah Rieger
+Date: 02/25/2020
+-->
+
+<head>
+	<meta charset="utf-8" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<title>Rules</title>
+	<meta name="author" content="Leah Rieger">
+	<script src="https://kit.fontawesome.com/6bb03a50c0.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="layout.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|News+Cycle|Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body class = "banner1">
+	<div id="header">
+		<button class = "openbtn" onclick="openNav()"><i class="fas fa-concierge-bell"></i></button>
+		
+		<div class = "header">
+			<img src = "splat.png"><h1 class = "header"> Rules</h1>
+		</div>
+		
+		<!-- NAV -->
+		<div id="main">
+		<div class="sidebar" id = "mySidebar">
+			<a id = "icon" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class = "fas fa-times"></i></a>
+			<!-- logo -->
+			<img class = "sidebar-logo" src = "logo.png" alt = "Leah Logo">
+			<a id = "icon" href="home.html"><i class="fas fa-caravan"></i> Home</a>
+			<a id = "icon" class="active" href="rules.html"><i class="fas fa-book-dead"></i> Rules</a>
+			<a id = "icon" href="character.html"><i class="fas fa-dragon"></i> NPC</a>
+			<a id = "icon" href="deck.html"><i class="fas fa-dice-d20"></i> Decks</a>
+			<a id = "icon" href="contact.html"><i class="fab fa-hubspot"></i> Coms</a>
+		</div>
+		</div>
+	</div>
+	<!-- MAIN CONTENT --> 
+<section class = "tabs">
+
+	<!-- TAB -->
+	<div class="warpper">
+	  <input class="radio" id="one" name="group" type="radio" checked>
+	  <input class="radio" id="two" name="group" type="radio">
+	  <input class="radio" id="three" name="group" type="radio">
+	  <div class="tabs">
+	  <!-- TAB 1 -->
+	  <label class="tab" id="one-tab" for="one">Gameplay</label>
+	  <!-- TAB 2 -->
+	  <label class="tab" id="two-tab" for="two">Combat</label>
+	  <!-- TAB 3 -->
+	  <label class="tab" id="three-tab" for="three">Players</label>
+	  </div>
+	  <div class="panels">
+	  <div class="panel" id="one-panel">
+		<div class="panel-title">Gameplay</div> <!-- TAB 1 -->
+		<p class = "panel-info">You spawn in an empty tile devoid of all monsters. When ready each player pays an action point to spawn a tile.
+		   Once the tile is spawned the leader of the group (or the one with the laptop) describes the buildings and vehicles to the players. 
+		   Do not reveal what is inside the buildings or vehicles just the name and size of building.
+		   At this point players with scouting have the chance to sneak into a building:<br>
+					<ol id = "ol">
+						<li>If sneak is successful players get to know what is in the building.</li><br>
+						<li>If sneak is critically successful go ahead and steal an item as well.</li>
+					</ol>
+			<p class = "panel-info">If players choose to enter the building pay 1 AP each to break in. Monsters of 1 type all attack together people entering the building.
+			Each player pays an action point and rolls for damage to target monster.
+			Once all players have rolled one player rolls for damage from monster. Rolling player is dealt that damage:<br>
+					<ol id = "ol">
+						<li><b style = "color: #FF7F50;">Special note</b> Remember to have fun. If something bad is going to happen. Feel free to jump in front of the monster and take the damage yourself.</li>
+					</ol>
+			<p class = "panel-info">Rinse and repeat until the monster is dead or you are:<br>
+					<ol id = "ol">
+						<li>If the monster dies go ahead and split the XP among attackers.</li><br>
+						<li>If player dies they pass out on the floor. More on this later.</li>
+					</ol>
+			<p class = "panel-info">Once all monsters have been cleared from building:<br>
+					<ol id = "ol">
+						<li>Pay an AP to loot building. The player that pays gets to dole out the loot or keep it all.</li><br>
+						<li>Feel free to sleep in the empty building.</li>
+					</ol>
+			<p class = "panel-info">If enemies are still alive on the tile lose 20 HP and 1 AP for sleeping in shifts:<br>
+								<ol id = "ol">
+									<li>If the tile is empty you sleep well. Good chance to get crafting done.</li>
+								</ol>
+			<p class = "panel-info">If all players are passed out the monsters lose interest. You wake back up in the spawn point regenerated:<br>
+						<ol id = "ol">
+							<li>For a harder experience feel free to roll to see if you keep your current inventory. </li>
+						</ol>
+		</p>
+	  </div>
+
+	  <div class="panel" id="two-panel">
+		<div class="panel-title">Combat</div> <!-- TAB 2 -->
+		<div id = "Combat" class="tabcontent">
+			<p class = "panel-info">
+				<ul class = "panel-info">
+					<b>Upon entering a structure:</b>
+					Draw the number of monster cards necessary to fill the building.
+					Since all monsters are territorial they attack immediately. <br>
+					<i style = "font-size: 12px; color: #860404;">If your health reaches 0% you lose your current equipment & faint until someone comes to rescue you.</i><br><br>
+					Roll 1 D20 for each combat action taking place:<br>
+					<dl id = "ol">
+						<dt style = "color: #FFAF5F;"><b>15 - 20 <i>Critical Success</i></b></dt>
+						<dd style = "color: #FFF;">Not only did you complete your task, but it cost you NO action points.</dd><br>
+						<dt style = "color: #FFAF5F;"><b>10 - 14 <i>Successful</i></b></dt>
+						<dd style = "color: #FFF;">Your task is completed.</dd>
+						<dd style = "color: #FFF;">Success means your weapon is restored & your turn ends.</dd><br>
+						<dt style = "color: #FFAF5F;"><b>5 - 9 <i>Failure</i></b></dt>
+						<dd style = "color: #FFF;">You have failed in your task.</dd>
+						<dd style = "color: #FFF;">Failure means your weapon breaks!</dd><br>
+						<dt style = "color: #FFAF5F;"><b>1 - 4 <i>Critical Failure</i></b></dt>
+						<dd style = "color: #FFF;">Not only did you fail your task, but it cost you something</dd>
+						<dd style = "color: #FFF;">Whether that be: <i>an item, xp, action points, health, etc...</i></dd><br>
+						<dt style = "color: #BD0202;"><b>On Critical Failures:</b></dt>
+						<dd style = "color: #FF7F50;">When carrying a ranged weapon -- it jams</dd>
+						<dd style = "color: #FF7F50;">When carrying a melee weapon -- it gets stuck.</dd>
+						<dd style = "color: #FF7F50;">In either case, roll again.</dd><br>
+					</dl>
+					<li style = "list-style: none; text-decoration: underline; font-size: 45px; font-family: 'Fredericka the Great'; color: #88490B;">Action Points:</li><br>
+					<dl id = "ol">
+						<dt style = "color: #FFAF5F; font-size: 15px;"><b>Strength</b></dt>
+						<dd style = "color: #FFF;">Melee Weapons</dd><br>
+						<dt style = "color: #FFAF5F; font-size: 15px;"><b>Marksmanship</b></dt>
+						<dd style = "color: #FFF;">Shooting, Range Weapons</dd><br>
+						<dt style = "color: #FFAF5F; font-size: 15px;"><b>Scavenging</b></dt>
+						<dd style = "color: #FFF;">Gathering resources</dd>
+						<dd style = "color: #FFF;">Every 2 stat points is an additional resource of your choice per building cleared must be done as an action.</dd><br>
+						<dt style = "color: #FFAF5F; font-size: 15px;"><b>Crafting</b></dt>
+						<dd style = "color: #FFF;">Your crafting level must match item level to be able to make.</dd>
+						<dd style = "color: #FFF;">On critical success crafting consumed 0 resources.</dd>
+						<dd style = "color: #FFF;">On critical failure destroy all resources.</dd><br>
+						<dt style = "color: #FFAF5F; font-size: 15px;"><b>Stamina</b></dt>
+						<dd style = "color: #FFF;">Increases number of action points for use each day.</dd>
+						<dd style = "color: #FFF;">Every 2 skill points is 1 extra action point per day</dd><br>
+						<dt style = "color: #FFAF5F; font-size: 15px;"><b>Salvaging</b></dt>
+						<dd style = "color: #FFF;">The ability to break down an item into it's cooresponding materials.</dd>
+						<dd style = "color: #FFF;">Every 2 skill points is 1 material to salvage from an item</dd><br>
+						<dt style = "color: #FFAF5F; font-size: 15px;"><b>Scouting</b></dt>
+						<dd style = "color: #FFF;">The ability to sneak a peek into buildings.</dd>
+							<dl id = "dl">
+								<dt><i><b style = "color: #FFAF5F; font-size: 13px;">Level 3</b></i></dt>
+								<dd style = "color: #fff; font-size: 11px;">Able to scout Small Building</dd><br>
+								<dt style = "color: #FFAF5F; font-size: 13px;"><i><b>Level 7</b></i></dt>
+								<dd style = "color: #fff; font-size: 11px;">Able to scout Medium Building</dd><br>
+								<dt style = "color: #FFAF5F; font-size: 13px;"><i><b>Level 10</b></i></dt>
+								<dd style = "color: #fff; font-size: 11px;">Able to scout Large Building</dd><br>
+							</dl>
+							
+					</dl>
+				</ul>
+			</p>
+		</div>
+
+
+	  </div>
+
+	  
+	  <div class="panel" id="three-panel">
+		<div class="panel-title">Players</div> <!-- TAB 3 -->
+		<div id="Player" class="tabcontent">
+			<p class = "panel-info">
+				<ul class = "panel-info ul">
+					<h5 style = "font-size: 30px; text-align: left; margin: 0;">Experience Points</h5>
+					<h6 style = "font-size: 20px; text-align: left; margin: 0;">Even split of xp between attackers unless 1st attacker kills creature all xp goes to that player.</h6>
+					<dl>
+						<dt style = "text-align: left; font-family: friendly; color: #9A6825; font-size: 30px;">Level</dt>
+						<dd>For each level gained, that level amount of skill points:</dd>
+						<dl id = "ol">
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">1 - 2:&emsp;    <b>200xp</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">2 - 3:&emsp;    <b>300xp</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">3 - 4:&emsp;    <b>400xp</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">4 - 5:&emsp;   <b>500xp</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">5 - 6:&emsp;   <b>600xp</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">6 - 7:&emsp;    <b>700xp</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">7 - 8:&emsp;    <b>800xp</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">8 - 9:&emsp;    <b>900xp</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">9 - 10:&emsp;    <b>1000xp</b></dd>
+						</dl><br><br>
+						<dt style = "text-align: left; font-family: friendly; color: #9A6825; font-size: 30px;">Health</dt>
+						<dl id = "ol">
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">Level 1:&emsp;    <b>100 health</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">Level 2:&emsp;    <b>120 health</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">Level 3:&emsp;    <b>140 health</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">Level 4:&emsp;    <b>160 health</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">Level 5:&emsp;    <b>180 health</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">Level 6:&emsp;   <b>200 health</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">Level 7:&emsp;    <b>220 health</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">Level 8:&emsp;    <b>240 health</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">Level 9:&emsp;    <b>260 health</b></dd><br>
+							<dd style = "padding-left: 70px; color: #fff; font-size: 15px;">Level 10:&emsp;   <b>280 health</b></dd>
+						</dl>
+						<br><br>
+						<dt style = "text-align: left; font-family: friendly; color: #9A6825; font-size: 30px;">Characters</dt>
+						<ol id="last">
+							<li style = "text-align: left; font-family: 'Oswald'; font-size: 15px; color: #000;">Each player starts with 10 stat points to spread into any category skill they wish. Every level put that number of stat points into your stats.</dd><br>
+							<li style = "text-align: left; font-family: 'Oswald'; font-size: 12px; color: #000;"><b style = "color: #FB0505;">EXAMPLE:</b> Level 2 gives you 2 stat points to place. Level 3 is a 3 point gain. And so on...</dd>
+						</ol>
+						</dt>
+					</dl>
+				</ul>
+			</p>
+		</div>
+
+	  </div>
+	  </div>
+	</div>
+
+</section>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
 <meta name = "viewport" content = "width = device - width, initial scale = 1">
 
 <!-- <link rel="stylesheet" href=""> -->

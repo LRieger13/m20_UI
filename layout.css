@@ -1,0 +1,554 @@
+/* HOME PAGE */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: friendly;
+	src: url(edosz.ttf);
+}
+
+@font-face {
+	font-family: monster;
+	src: url(fiendish.ttf);
+}
+
+
+/* HEADER */
+#header {
+	display: flex;
+	position: fixed;
+	width: 100%; 
+	height: 100px;
+}
+
+.header {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: 200px;
+	z-index: -2;
+}
+
+.header h1 {
+	position: absolute;
+	top: 50%;
+	left: 52%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	font-family: friendly;
+	font-weight: normal;
+	font-size: 65px;
+	z-index: 1;
+}
+
+/* NAVIGATION */
+/* NAV */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 50px;
+  transition: 0.5s;
+}
+
+.sidebar .active {
+	color: #FFA500;
+}
+
+.sidebar a {
+  padding: 16px 8px 32px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #708090;
+  display: block;
+  transition: 0.3s;
+  vertical-align: baseline;
+}
+
+.sidebar a:hover {
+  color: #FFA500;
+}
+
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+	color: white;
+}
+
+.openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #733E01;
+	color:#A78156;
+	padding: 10px 15px;
+	border: none;
+	height: 50px;
+}
+
+.openbtn:hover {
+	background-color: #FF8800;
+	color: #733E01;
+}
+
+#icon {
+	font-size: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+
+.sidebar-logo {
+	display: flex;
+	float: left;
+}
+
+.container {
+	overflow:hidden;
+	max-width: 1200px;
+	height: 100%;
+	text-align: right;
+	color: white;
+	padding: 0 40px;
+	margin-top: 250px;
+	margin-bottom: 150px;
+	margin-right: 200px;
+	margin-left: 300px;
+}
+
+
+/* BODY */
+body {
+	padding: 0;
+	margin: 0;
+	font-family: friendly;
+	font-size: 1rem;
+	color: white;
+	min-height: 100vh;  /* min viewheight of screen will be body */
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* background instance */
+.banner0 { /* home page */
+	background: #000000 url(house.jpg) no-repeat center;
+	z-index: -1;
+	width: 100%;
+	height: auto;
+}
+
+.banner1 { /* Rules page */
+	background-image: url(rules.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+.banner2 { /* decks page */
+	background: #000000 url(deck.jpg) no-repeat center;
+}
+
+.banner3 { /* players page */
+	background-image: url(npc.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+.banner4 { /* contact page */
+	background: #000000 url(contact.png) no-repeat center;
+	z-index: -3;
+}
+
+
+/* SECTION - HOME CONTENT */
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	margin-left: 200px;
+	margin-right: 400px;
+	border: solid 5px #A78156;
+	margin-top: 200px;
+	margin-bottom: 100px;
+	left: 150px;
+	padding: 20px;
+	background: rgba(125, 67, 1, 0.7);
+	box-shadow: 5px 10px 5px rgba(77, 41, 1, 0.7);
+	z-index: 1;
+}
+
+.content h2 {
+	font-family: 'Fredericka the Great';
+	font-variant: small-caps;
+	font-weight: normal;
+	color: #FF8800;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	font-size: 50px;
+}
+.content h3 {
+	font-family: 'Fredericka the Great';
+	font-size: 22px;
+	font-weight: normal;
+	color: #FF8800;
+}
+.content p {
+	font-family: 'Oswald';
+	font-size: 20px;
+	color: #EFE5D9;
+}
+
+@media screen and (max-width: 700px) {
+	.content {
+		flex-direction: column;
+	}
+}
+
+/* SECTION - RULES CONTENT */
+.tabs {
+	padding-top: 150px;
+	padding-bottom: 50px;
+	
+}
+
+.tab h2{
+  color:#000;
+  text-align:center;
+  font-size:2em;
+}
+
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  font-size: 40px;
+  background: rgba(121, 67, 3, 0.9);
+  display:inline-block;
+  color:#D19E62;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+.panels{
+  background:rgba(255, 174, 77, 0.9); 
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:200px;
+  width:100%;
+  max-width:500px;
+  border-radius:3px;
+  overflow-x:hidden;
+  overflow-y: scroll;
+  max-height: 600px;
+  padding-right: 50px;
+  padding-left: 30px;
+  
+}
+
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.panel-title{
+	font-size: 3.5em;
+	font-weight: normal;
+	font-family: 'Fredericka the Great';
+	color: #633602;
+	text-align: center;
+}
+
+.panel-info {
+	font-size: 15px;
+	font-family: 'Oswald';
+	color: #9E6F37;
+	text-align: center;
+}
+
+.panel-info .ul {
+	font-size: 15px;
+	font-family: 'News Cycle';
+	color: #C88B3A;
+	text-align: left;
+	
+	
+}
+
+#ol {
+	font-size: 12px;
+	font-family: 'News Cycle';
+	border: 5px solid #A78156;
+	background: rgba(125, 67, 1);
+	padding: 10px;
+	text-align: left;
+	list-style: none;
+	text-decoration: none;
+	width: auto;
+	box-shadow: 5px 5px 5px #6E5433;
+}
+
+
+#ul {
+	font-size: 12px;
+	font-family: 'News Cycle';
+	border: 5px solid #A78156;
+	background: rgba(125, 67, 1);
+	padding: 2px;
+	text-align: left;
+	list-style: none;
+	text-decoration: none;
+}
+
+#dl { 
+	padding: 5px;
+	margin: 5px;
+	margin-left: 35px;
+	width: 60%; 
+	border: 3px outset #D6BA95;
+	align-self: center;
+	color: #BBD4D8; 
+	font-size: 10px;
+	box-shadow: 5px 5px 5px #283747;
+	background-color: #A78156;
+}
+
+#last {
+	font-size: 12px;
+	font-family: 'Oswald';
+	border: 5px solid #A78156;
+	background: #A78156;
+	padding: 10px;
+	text-align: left;
+	list-style: none;
+	text-decoration: none;
+	width: auto;
+	box-shadow: 5px 5px 5px #6E5433;
+}
+
+.panal-li {
+	text-align: center; 
+	font-family: 'Oswald'; 
+	font-size: 15px; 
+	color: #9E6F37;
+}
+
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
+
+
+/* SECTION - DECKS CONTENT */
+
+/* responsive columns */
+@media screen and (max-width: 600px) {
+	.card {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+.card {
+	background-color: transparent;
+	max-width: 50%;
+	min-height: 300px;
+	display: flex;
+	overflow-x: auto;
+	position: relative;
+	top: 300px;
+	z-index:0;
+	margin-left: 400px;
+}
+
+.card--content {
+	background-color: #FF7E0C;
+	min-width: 250px;
+	margin: 5px;
+}
+
+.flip-card {
+	background-color: transparent;
+	width: 250px;
+	height: 250px;
+	border: 1px solid #DAB594;
+	perspective: 1000px; /*this is used for 3d*/
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* horizontal flip when hover */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+	
+}
+
+/* position front & back side */
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/* style front side (fallback if img is missing) */
+.flip-card-front {
+	background-color: SlateGray;
+	color: black;
+}
+
+/* style back side */
+.flip-card-back {
+	background-color: #89572B;
+	color: #DAB594;
+	transform: rotateY(180deg);
+	font-family: 'Oswald';
+	font-variant: small-caps;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+
+/* SECTION - CONTACT CONTENT */
+#forms {
+	font-family: 'Oswald';
+	font-size: 15px;
+	margin: 5px;
+	padding: 15px;
+	align-items: center;
+	
+}
+
+.title {
+	font-family: monster;
+	font-size: 25px;
+	font-weight: normal;
+	color: #89572B;
+}
+
+#place {
+	display: inline;
+	position: center;
+	font-family: 'Oswald';
+	font-size: 15px;
+	margin: 5px;
+	position: relative;
+}
+
+.contain {
+	display: flex;
+	position: relative;
+	z-index: 1;
+	border-radius: 5px; 
+	background-color: #DDAA79;
+	padding: 2px;
+	font-family: 'Fredericka the Great';
+	font-weight: normal;
+	font-size: 16px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+/* NPC PAGE */
+#sticker {
+	display: flex;
+	position: absolute;
+	padding: 10px;
+	margin: 35px;
+	word-spacing: 3px;
+	letter-spacing: 2px;
+	background-color: #DDAA79;
+	font-size: 25px;
+	font-family: 'Fredericka the Great', monospaced;
+	font-variant: small-caps;
+	font-weight: normal;
+	border: 3px inset #333;
+	box-shadow: 5px 5px #555;
+	vertical-align: baseline;
+	z-index: -1;
+}
+
+#outside {
+	font-size: 30px;
+	margin: 10px;
+	padding: 10px;
+	align-self: center;
+	background-color: #DDAA79;
+}
+
+
+#outside2 {
+	font-size: 30px;
+	margin: 10px;
+	padding: 10px;
+	align-self: center;
+	background-color: transparent;
+}
+
+
+.tabs1 {
+	padding-top: 200px;
+	padding-bottom: 100px;
+}
