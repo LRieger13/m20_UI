@@ -515,7 +515,8 @@ body {
 	display: flex;
 	position: absolute;
 	padding: 10px;
-	margin: 350px;
+	margin-left: 350px;
+	margin-top: 50px;
 	word-spacing: 3px;
 	letter-spacing: 2px;
 	background-color: #DDAA79;
